@@ -5,6 +5,7 @@
 //  Created by Ruchira  on 20/06/24.
 
 import SwiftUI
+import Firebase
 
 struct LaunchScreenView: View {
     @State private var mobileNumber: String = ""

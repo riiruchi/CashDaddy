@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183D41D42C24D36300D940F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 183D41D32C24D36300D940F4 /* FirebaseAnalytics */; };
+		183D41D62C24D36300D940F4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 183D41D52C24D36300D940F4 /* FirebaseAnalyticsOnDeviceConversion */; };
+		183D41D82C24D36300D940F4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 183D41D72C24D36300D940F4 /* FirebaseAnalyticsSwift */; };
+		183D41DA2C24D36300D940F4 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 183D41D92C24D36300D940F4 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		183D41DC2C24D36300D940F4 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 183D41DB2C24D36300D940F4 /* FirebaseAppCheck */; };
+		183D41DE2C24D46E00D940F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D41DD2C24D46E00D940F4 /* AppDelegate.swift */; };
+		183D41E02C24D52500D940F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183D41DF2C24D52500D940F4 /* GoogleService-Info.plist */; };
 		185C4C2D2C24784300F73FAE /* CashDaddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C4C2C2C24784300F73FAE /* CashDaddyApp.swift */; };
 		185C4C2F2C24784300F73FAE /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C4C2E2C24784300F73FAE /* LaunchScreenView.swift */; };
 		185C4C312C24784500F73FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185C4C302C24784500F73FAE /* Assets.xcassets */; };
@@ -15,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183D41DD2C24D46E00D940F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		183D41DF2C24D52500D940F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		185C4C292C24784300F73FAE /* CashDaddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashDaddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185C4C2C2C24784300F73FAE /* CashDaddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashDaddyApp.swift; sourceTree = "<group>"; };
 		185C4C2E2C24784300F73FAE /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -28,6 +37,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183D41D82C24D36300D940F4 /* FirebaseAnalyticsSwift in Frameworks */,
+				183D41D42C24D36300D940F4 /* FirebaseAnalytics in Frameworks */,
+				183D41D62C24D36300D940F4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				183D41DC2C24D36300D940F4 /* FirebaseAppCheck in Frameworks */,
+				183D41DA2C24D36300D940F4 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,8 @@
 				185C4C3C2C24865700F73FAE /* VerificationView.swift */,
 				185C4C302C24784500F73FAE /* Assets.xcassets */,
 				185C4C322C24784500F73FAE /* Preview Content */,
+				183D41DD2C24D46E00D940F4 /* AppDelegate.swift */,
+				183D41DF2C24D52500D940F4 /* GoogleService-Info.plist */,
 			);
 			path = CashDaddy;
 			sourceTree = "<group>";
@@ -86,6 +102,13 @@
 			dependencies = (
 			);
 			name = CashDaddy;
+			packageProductDependencies = (
+				183D41D32C24D36300D940F4 /* FirebaseAnalytics */,
+				183D41D52C24D36300D940F4 /* FirebaseAnalyticsOnDeviceConversion */,
+				183D41D72C24D36300D940F4 /* FirebaseAnalyticsSwift */,
+				183D41D92C24D36300D940F4 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				183D41DB2C24D36300D940F4 /* FirebaseAppCheck */,
+			);
 			productName = CashDaddy;
 			productReference = 185C4C292C24784300F73FAE /* CashDaddy.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 185C4C202C24784300F73FAE;
+			packageReferences = (
+				183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 185C4C2A2C24784300F73FAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,6 +156,7 @@
 			files = (
 				185C4C342C24784500F73FAE /* Preview Assets.xcassets in Resources */,
 				185C4C312C24784500F73FAE /* Assets.xcassets in Resources */,
+				183D41E02C24D52500D940F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183D41DE2C24D46E00D940F4 /* AppDelegate.swift in Sources */,
 				185C4C3D2C24865700F73FAE /* VerificationView.swift in Sources */,
 				185C4C2F2C24784300F73FAE /* LaunchScreenView.swift in Sources */,
 				185C4C2D2C24784300F73FAE /* CashDaddyApp.swift in Sources */,
@@ -350,6 +378,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		183D41D32C24D36300D940F4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		183D41D52C24D36300D940F4 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		183D41D72C24D36300D940F4 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		183D41D92C24D36300D940F4 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		183D41DB2C24D36300D940F4 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183D41D22C24D36300D940F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 185C4C212C24784300F73FAE /* Project object */;
 }
